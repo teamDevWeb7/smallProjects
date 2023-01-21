@@ -9,6 +9,6 @@ function suppr(){
 function exe(){
     let result=ecran.textContent;
     let parse=eval(result);
-    ecran.innerHTML=parse;
+    ecran.innerHTML=parse.toFixed(2);
    
 }
