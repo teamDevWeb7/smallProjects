@@ -23,8 +23,9 @@
         <h1>Ma To Do List</h1>
         <form action="#" method="POST">
             <input type="text" name="nv" placeholder="Ajouter une tâche">
-            <button type="submit">Ajouter</button>
+            <button type="submit" >Ajouter</button>
         </form>
+        <button type="button" onclick="refreshh()" id="refr">Refresh</button>
 
         <?php
             
@@ -48,7 +49,7 @@
                     $query->bindValue(':nom_tache', $nv, PDO::PARAM_STR);
 
                     if($query->execute()){
-                        echo 'La nouvelle tâche a été ajoutée avec succès';
+                        echo '<span class="tempo">La nouvelle tâche a été ajoutée avec succès</span>';
                     }else{
                         echo 'La nouvelle tâche n\'a pas pu être rajoutée';
                     }
@@ -58,7 +59,7 @@
                
 
             }else{
-                echo 'Merci de saisir une tâche';
+                echo '<span class="tempo">Merci de saisir une tâche</span>';
             }
 
 
@@ -76,6 +77,7 @@
             </ul>
 
         </section>
+        
     </main>
     
     

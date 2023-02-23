@@ -80,7 +80,7 @@ button:active{
 #taches{
     position: absolute;
     margin-left: 39%;
-    margin-top: 20%;
+    margin-top: 21%;
 }
 .li{
     list-style:circle;
@@ -97,3 +97,17 @@ a{
     border-radius: 5px;
     text-decoration: none;
 }
+a:active{
+    color: black;
+}
+
+/* btn refresh */
+#refr{
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 47%;
+    border-radius: 5px;
+}
+
+
+
