@@ -28,8 +28,6 @@
 
         <?php
             
-
-
             // lavage données
             if(isset($_POST['nv'])&& !empty($_POST['nv'])){
                 $nv=strip_tags(htmlentities($_POST['nv']));
@@ -72,7 +70,7 @@
             <ul>
                 <?php
                     foreach($taches as $tache){
-                        echo '<li>'.$tache['nom_tache'].'<a href="delete.php?id='.$tache['id'].'">Supprimer</a></li>';
+                        echo '<li class="li">'.$tache['nom_tache'].'<a href="delete.php?id='.$tache['id'].'">Supprimer</a></li>';
                     }
                 ?>
             </ul>
