@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: rgb(249,250,252);
+}
+
+/* clipboard en fond */
+img{
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    margin-left: 32%;
+}
+
+
+/* titre ma to do list */
+h1{
+    position: absolute;
+    margin-left: 41%;
+    margin-top: 13%;
+    animation-name: boum;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+h1:hover{
+    font-size: 2.3em;
+    margin-left: 40%;
+}
+@keyframes boum{
+    from{
+        color: black;
+    }20%{
+        color: rgb(122, 29, 29);
+    }40%{
+        color: rgb(156, 13, 13);
+    }60%{
+        color: rgb(176, 46, 117);
+    }80%{
+        color: rgb(83, 13, 83);
+    }to{
+        color: black;
+    }
+}
+
+/* partie ajout tâche */
+form{
+    position: absolute;
+    margin-left: 37%;
+    margin-top: 18%;
+}
+input{
+    height: 4vh;
+    width: 18vw;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+button{
+    width: 6vw;
+    height: 4vh;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: rgb(64, 64, 148);
+    color: white;
+    cursor: pointer;
+    margin-left: -3px;
+}
+button:active{
+    background-color: white;
+    color: rgb(64, 64, 148);
+    border: 1px solid rgb(64, 64, 148);
+}
