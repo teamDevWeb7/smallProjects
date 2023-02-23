@@ -57,6 +57,7 @@
                 }else{
                     echo '<span class="tempo">Cette tâche est déjà enregistrée</span>';
                 }
+               
 
             }else{
                 echo 'Merci de saisir une tâche';
@@ -71,7 +72,7 @@
             <ul>
                 <?php
                     foreach($taches as $tache){
-                        echo '<li>'.$tache['nom_tache'].'<a href="delete.php">Supprimer</a></li>';
+                        echo '<li>'.$tache['nom_tache'].'<a href="delete.php?id='.$tache['id'].'">Supprimer</a></li>';
                     }
                 ?>
             </ul>
