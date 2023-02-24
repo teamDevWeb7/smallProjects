@@ -59,6 +59,7 @@
                
 
             }else{
+                // comme je ne check pas si method get ou post qd j'arrive sur la page ça affiche tt le temps
                 echo '<span class="tempo">Merci de saisir une tâche</span>';
             }
 
