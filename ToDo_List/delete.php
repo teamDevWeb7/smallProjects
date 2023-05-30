@@ -13,9 +13,4 @@ if(isset($_GET['id'])){
     echo 'Une erreur s\'est produite';
     header('location:toDo.php');
 }
-
-
-
-
-
 ?>

@@ -12,7 +12,7 @@
 <body>
     <main>
         <?php
-            // connect BDD+aller chercher enregistrements
+            // connect BDD + aller chercher enregistrements
             require ".". DIRECTORY_SEPARATOR. "BDD.php";
             $str='SELECT*FROM taches';
             $query=$bdd->query($str);
@@ -62,9 +62,6 @@
                 // comme je ne check pas si method get ou post qd j'arrive sur la page ça affiche tt le temps
                 echo '<span class="tempo">Merci de saisir une tâche</span>';
             }
-
-
-
         ?>
 
 
@@ -78,11 +75,6 @@
             </ul>
 
         </section>
-        
-    </main>
-    
-    
-
-    
+    </main>  
 </body>
 </html>

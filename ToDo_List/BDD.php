@@ -1,4 +1,5 @@
 <?php
+// infos bdd
 $host='localhost';
 $dbname='lil_todolist';
 $user='root';
